@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>Home</title>
+
+        <link th:href="@{/webjars/bootstrap/3.2.0/css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <div class="jumbotron">
+                    <h1>Hello World!</h1>
+
+                    <p>This is a sample.</p>
+
+                    <p>
+                        <a class="btn btn-primary btn-lg" role="button" th:href="@{/list}">List</a>
+                        <a class="btn btn-primary btn-lg" role="button" th:href="@{/get}">Get</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script th:src="@{/webjars/jquery/1.11.1/jquery.min.js}" type="text/javascript"></script>
+        <script th:src="@{/webjars/bootstrap/3.2.0/js/bootstrap.min.js}" type="text/javascript"></script>
+    </body>
+</html>
