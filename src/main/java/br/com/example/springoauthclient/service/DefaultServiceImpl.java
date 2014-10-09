@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestOperations;
 
-import java.net.URI;
-
 @Service
 class DefaultServiceImpl implements DefaultService {
 
@@ -14,11 +12,11 @@ class DefaultServiceImpl implements DefaultService {
 
     @Override
     public String get() {
-        return rest.getForObject(URI.create("http://resource.example.com:28080/get"), String.class);
+        return rest.getForObject("http://resource.example.com:28080/get", String.class);
     }
 
     @Override
     public String list() {
-        return rest.getForObject(URI.create("http://resource.example.com:28080/list"), String.class);
+        return rest.getForObject("http://resource.example.com:28080/list", String.class);
     }
 }

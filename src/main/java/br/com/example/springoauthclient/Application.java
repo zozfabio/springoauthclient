@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan
+@ComponentScan("br.com.example.springoauthclient")
 @EnableAutoConfiguration(exclude = {SecurityAutoConfiguration.class})
 public class Application {
 
